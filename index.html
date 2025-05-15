@@ -1,0 +1,140 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>باریستا</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <header>
+      <nav class="container">
+        <h1>باریستا</h1>
+        <ul>
+          <li><a href="#about">درباره ما</a></li>
+          <li><a href="#specials">ویژه‌های امروز</a></li>
+          <li><a href="#gallery">گالری</a></li>
+          <li><a href="#contact">تماس</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <section id="hero">
+      <div class="container">
+        <h2>تجربه ای متفاوت در هر قطره</h2>
+        <p>دنیا قهوه رو فنجون به فنجون کشف کن</p>
+        <button id="factBtn">دیگه چی؟</button>
+        <p id="factDisplay" class="hidden"></p>
+      </div>
+    </section>
+
+    <section id="about">
+      <div class="container">
+        <h2>درباره ما</h2>
+        <div class="flex">
+          <img
+            src="https://images.unsplash.com/photo-1447753072467-2f56032d1d48?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+            alt="دانه‌های قهوه"
+          />
+          <div>
+            <p>
+              در باریستا دانه‌های قهوه مون را از مزارع پایدار سراسر جهان تهیه
+              می‌کنیم. مأموریت ما عرضهٔ قهوهٔ تازه‌تفت‌داده‌شده با تأکید بر طعم
+              و کیفیت است.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="specials">
+      <div class="container">
+        <h2>ویژه‌های امروز</h2>
+        <div class="cards">
+          <div class="card">
+            <img
+              src="https://plus.unsplash.com/premium_photo-1668472273855-b5ac9441907e?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+              alt="اسپرسو"
+            />
+            <h3>اسپرسو</h3>
+            <p>پررنگ و قوی، اسپرسوی ما توسط باریستای حرفه‌ای آماده می‌شود.</p>
+          </div>
+          <div class="card">
+            <img
+              src="https://plus.unsplash.com/premium_photo-1664970900098-2676029e6a99?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+              alt="لاته وانیلی"
+            />
+            <h3>لاته وانیلی</h3>
+            <p>شیر بخار دیده با طعم وانیل روی دو شات اسپرسو.</p>
+          </div>
+          <div class="card">
+            <img
+              src="https://images.unsplash.com/photo-1502165971801-35b35e7bbf9b?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+              alt="کاپوچینو"
+            />
+            <h3>کاپوچینو</h3>
+            <p>سبک کلاسیک ایتالیایی با سپرسو، شیر و فوم برابر.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="gallery">
+      <div class="container">
+        <h2>گالری</h2>
+        <div class="gallery-grid">
+          <img src="https://plus.unsplash.com/premium_photo-1669374537810-f88d8ad82818?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="فنجان قهوه" />
+          <img
+            src="https://images.unsplash.com/photo-1525088553748-01d6e210e00b?q=80&w=2076&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+            alt="قهوه و شیرینی"
+          />
+          <img src="https://images.unsplash.com/photo-1493857671505-72967e2e2760?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="لِیت آرت" />
+          <img
+            src="https://images.unsplash.com/photo-1445116572660-236099ec97a0?q=80&w=2071&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+            alt="دکور کافی‌شاپ"
+          />
+        </div>
+      </div>
+    </section>
+
+    <section id="contact">
+      <div class="container">
+        <h2>تماس با ما</h2>
+        <form id="contactForm">
+          <input type="text" placeholder="نام شما" required />
+          <input type="email" placeholder="آدرس ایمیل" required />
+          <textarea placeholder="پیام شما" rows="4" required></textarea>
+          <button type="submit">ارسال پیام</button>
+        </form>
+      </div>
+    </section>
+
+    <footer>
+      <div class="container footer-content">
+        <div>
+          <h3>باریستا</h3>
+          <p>استان تهران - شهر تهران<br />خیابان انقلاب - کوچه ۱۲۳ - پلاک ۱۲</p>
+        </div>
+        <div>
+          <h4>ما را دنبال کنید</h4>
+          <ul class="social">
+            <li><a href="#">فیسبوک</a></li>
+            <li><a href="#">اینستاگرام</a></li>
+            <li><a href="#">توییتر</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>عضویت</h4>
+          <form id="subscribeForm">
+            <input type="email" placeholder="ایمیل شما" required />
+            <button type="submit">عضویت</button>
+          </form>
+        </div>
+      </div>
+      <p class="copy">barista, all copyrights reserved</p>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>

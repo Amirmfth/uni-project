@@ -1,0 +1,280 @@
+/* styles.css */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  body {
+    background: #f0eee9;
+    color: #4e342e;
+    line-height: 1.6;
+    font-family: 'Yekan Bakh', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+    font-weight: 400;
+    direction: rtl;
+  }
+  
+  .container {
+    width: 90%;
+    max-width: 1000px;
+    margin: auto;
+    padding: 1.5rem 0;
+  }
+  
+  header {
+    background: #3e2723bb;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 100;
+  }
+  header .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  header h1 {
+    color: #fff;
+  }
+  header ul {
+    list-style: none;
+    display: flex;
+  }
+  header li + li {
+    margin-left: 1rem;
+  }
+  header a {
+    color: #fff;
+    text-decoration: none;
+    padding: 0.5rem;
+    transition: background 0.3s;
+  }
+  header a:hover {
+    background: rgba(255,255,255,0.3);
+    border-radius: 4px;
+  }
+  
+  #hero {
+    background: url('https://images.unsplash.com/photo-1690983326252-ce6205fb7055?q=80&w=1920&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D') center/cover no-repeat;
+    color: #fff;
+    text-align: center;
+    padding: 4rem 0;
+  }
+  #hero h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    margin-top:1rem;
+  }
+  #hero p {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+}
+#hero button {
+    background: #6b4f4f;
+    color: #fff;
+    border: none;
+    padding: 0.75rem 1.5rem;
+    font-size: 1rem;
+    font-family: 'Yekan Bakh', sans-serif;
+    border-radius: 4px;
+    cursor: pointer;
+}
+#hero button:hover {
+    background: #563c3c;
+}
+#hero #factDisplay {
+    /* margin-top: 1rem; */
+    margin: 1rem auto 0;
+    padding: 0 15px;
+    border-radius: 4px;
+    font-style: italic;
+    width: fit-content;
+    color: #fff;
+    background: #6b4f4faa;
+  }
+  .hidden {
+    display: none;
+  }
+  
+  section h2 {
+    text-align: center;
+    margin-bottom: 1.5rem;
+    color: #5d4037;
+  }
+
+  
+  
+  #about .flex {
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+  }
+  #about img {
+    flex: 1;
+    max-width: 600px;
+    border-radius: 8px;
+  }
+  #about div {
+    flex: 2;
+  }
+ 
+  #specials {
+    background-color: #5d4037;
+  }
+
+  #specials h2 {
+    color: #fff
+  }
+  
+  .cards {
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .card {
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.15);
+    overflow: hidden;
+    width: 300px;
+    text-align: center;
+  }
+  .card img {
+    width: 100%;
+    display: block;
+  }
+  .card h3 {
+    margin: 1rem 0 0.5rem;
+  }
+  .card p {
+    padding: 0 1rem 1rem;
+    font-size: 0.9rem;
+  }
+  
+
+
+  .gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1rem;
+  }
+  .gallery-grid img {
+    width: 100%;
+    border-radius: 4px;
+    display: block;
+  }
+  
+  #contact {
+    background-color: #4e342e;
+    color: #fff;
+  }
+
+  #contact h2 {
+    color: #fff;
+  }
+  
+  form {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+    max-width: 500px;
+    margin: auto;
+  }
+  form input,
+  form textarea {
+    padding: 0.75rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  form button {
+    padding: 0.75rem;
+    border: none;
+    border-radius: 4px;
+    background: #6b4f4f;
+    color: #fff;
+    cursor: pointer;
+  }
+  form button:hover {
+    background: #563c3c;
+  }
+  
+  footer {
+    background: #efebe9;
+    padding-bottom: 1rem;
+  }
+  .footer-content {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+  }
+  .footer-content > div {
+    flex: 1;
+    min-width: 200px;
+  }
+  .footer-content h4 {
+    margin-bottom: 0.5rem;
+  }
+  .social {
+    list-style: none;
+  }
+  .social li + li {
+    margin-top: 0.5rem;
+  }
+  .social a {
+    color: #6b4f4f;
+    text-decoration: none;
+  }
+  .copy {
+    text-align: center;
+    margin-top: 1rem;
+    font-size: 0.8rem;
+    color: #6d4c41;
+  }
+  
+  /* Yekan Bakh Font Faces */
+  @font-face {
+    font-family: 'Yekan Bakh';
+    src: url('fonts/YekanBakh-Light.woff2') format('woff2');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+    unicode-range: U+0600-06FF, U+200C-200E, U+2010-2011, U+204F, U+2E41, U+0660-0669, U+06F0-06F9, U+FB50-FDFF, U+FE70-FEFF, U+1EE00-1EEFF;
+  }
+
+  @font-face {
+    font-family: 'Yekan Bakh';
+    src: url('fonts/YekanBakh-Regular.woff2') format('woff2');
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+    unicode-range: U+0600-06FF, U+200C-200E, U+2010-2011, U+204F, U+2E41, U+0660-0669, U+06F0-06F9, U+FB50-FDFF, U+FE70-FEFF, U+1EE00-1EEFF;
+  }
+
+  @font-face {
+    font-family: 'Yekan Bakh';
+    src: url('fonts/YekanBakh-Bold.woff2') format('woff2');
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap;
+    unicode-range: U+0600-06FF, U+200C-200E, U+2010-2011, U+204F, U+2E41, U+0660-0669, U+06F0-06F9, U+FB50-FDFF, U+FE70-FEFF, U+1EE00-1EEFF;
+  }
+
+  @font-face {
+    font-family: 'Yekan Bakh';
+    src: url('fonts/YekanBakh-Heavy.woff2') format('woff2');
+    font-weight: 800;
+    font-style: normal;
+    font-display: swap;
+    unicode-range: U+0600-06FF, U+200C-200E, U+2010-2011, U+204F, U+2E41, U+0660-0669, U+06F0-06F9, U+FB50-FDFF, U+FE70-FEFF, U+1EE00-1EEFF;
+  }
+
+  @font-face {
+    font-family: 'Yekan Bakh';
+    src: url('fonts/YekanBakh-Fat.woff2') format('woff2');
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
+    unicode-range: U+0600-06FF, U+200C-200E, U+2010-2011, U+204F, U+2E41, U+0660-0669, U+06F0-06F9, U+FB50-FDFF, U+FE70-FEFF, U+1EE00-1EEFF;
+  }
